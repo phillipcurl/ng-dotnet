@@ -21,4 +21,17 @@ export class ApiService {
         return body || {};
       });
   }
+
+  getPost(id: number): Observable<Post> {
+    return this.http
+      .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+      .map((res: Response): any => {
+        if (res.status < 200 || res.status >= 300) {
+          throw new Error('Response status: ' + res.status);
+        }
+        const body = res.json();
+        // this._cache.store(res.url, body || {});
+        return body || {};
+      });
+  }
 }

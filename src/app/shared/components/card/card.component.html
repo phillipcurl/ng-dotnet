@@ -1,3 +1,7 @@
-<p>
-  sample works!
-</p>
+<div class="card">
+  <div class="card-block">
+    <h4 class="card-title">{{post.title}}</h4>
+    <p class="card-text">{{post.body}}</p>
+    <a [routerLink]="['./', post.id]" class="card-link">View</a>
+  </div>
+</div>
