@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
 
+The following command was used to create the project:
+
+`ng new ng-dotnet -si --style=scss --routing=true && cd ng-dotnet`
+
+## Differentiating Features from Angular CLI
+- Addition of [ng-bootstrap](https://ng-bootstrap.github.io/#/home)
+- Added npm scripts that are useful for .NET Angular development
+- Shared module for quicker, simpler development
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
